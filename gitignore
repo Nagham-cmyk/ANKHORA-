@@ -1,0 +1,6 @@
+
+node_modules/
+ankhora.db
+ankhora.db-shm
+ankhora.db-wal
+.env
