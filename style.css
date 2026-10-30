@@ -1,0 +1,308 @@
+
+/* General */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #E9DCC5;
+    color: #171717;
+    font-family: Georgia, serif;
+}
+
+/* Navbar */
+
+header {
+    background-color: #E9DCC5;
+    padding: 20px 8%;
+    border-bottom: 1px solid #626B43;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    letter-spacing: 3px;
+}
+
+.logo span {
+    color: #B58A36;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #171717;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #B58A36;
+}
+
+.menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+
+.hero {
+    padding: 70px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    min-height: 550px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.subtitle {
+    color: #626B43;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #B58A36;
+}
+
+.hero-content p {
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.main-btn {
+    display: inline-block;
+    background-color: #626B43;
+    color: white;
+    text-decoration: none;
+    padding: 14px 25px;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.main-btn:hover {
+    background-color: #B58A36;
+}
+
+/* Intro Video */
+
+.video-container {
+    flex: 1;
+    border: 5px solid #626B43;
+    padding: 5px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.video-container video {
+    width: 100%;
+    height: 320px;
+    display: block;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* About */
+
+.about {
+    text-align: center;
+    padding: 90px 15%;
+    background-color: #F1E7D5;
+}
+
+.about h2,
+.artifacts h2,
+.explore h2 {
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+.about p:not(.subtitle) {
+    line-height: 2;
+    margin-bottom: 15px;
+}
+
+/* Artifacts */
+
+.artifacts {
+    padding: 90px 8%;
+    text-align: center;
+}
+
+.section-description {
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+#searchInput {
+    width: 70%;
+    max-width: 450px;
+    padding: 14px;
+    border: 2px solid #626B43;
+    background: #F1E7D5;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    font-size: 15px;
+    outline: none;
+}
+
+.artifact-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.artifact-card {
+    background-color: #F1E7D5;
+    border: 2px solid #626B43;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: 0.3s;
+    text-align: left;
+}
+
+.artifact-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+.artifact-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.artifact-info {
+    padding: 25px;
+}
+
+.artifact-info h3 {
+    color: #B58A36;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.artifact-info p {
+    line-height: 1.8;
+    color: #B58A36;
+}
+
+/* Explore */
+
+.explore {
+    background-color: #626B43;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.explore p {
+    margin-bottom: 25px;
+    line-height: 1.8;
+}
+
+/* Footer */
+
+footer {
+    background-color: #171717;
+    color: #E9DCC5;
+    text-align: center;
+    padding: 35px 15px;
+    line-height: 2;
+}
+
+footer h2 {
+    color: #B58A36;
+    letter-spacing: 4px;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 768px) {
+
+    .menu-btn {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        width: 100%;
+        padding: 25px;
+        background-color: #E9DCC5;
+        text-align: center;
+        z-index: 10;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 6%;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .video-container {
+        width: 100%;
+    }
+
+    .video-container video {
+        height: 250px;
+    }
+
+    .artifact-container {
+        grid-template-columns: 1fr;
+    }
+
+    #searchInput {
+        width: 100%;
+    }
+
+    .about {
+        padding: 65px 8%;
+    }
+
+    .about h2,
+    .artifacts h2,
+    .explore h2 {
+        font-size: 28px;
+    }
+}
