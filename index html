@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ANKHORA | Egyptian Museum</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">ANKHORA<span>.</span></h2>
+
+            <button class="menu-btn" id="menuBtn">☰</button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#artifacts">Artifacts</a></li>
+                <li><a href="#explore">Explore</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home / Intro -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+            <p class="subtitle">WELCOME TO ANCIENT EGYPT</p>
+
+            <h1>Discover The <br>
+                Magic Of <span>Egypt</span>
+            </h1>
+
+            <p>
+                A journey through thousands of years
+                of history, art and civilization.
+            </p>
+
+            <a href="#artifacts" class="main-btn">
+                Explore Artifacts
+            </a>
+        </div>
+
+        <div class="video-container">
+            <iframe
+                src="https://www.youtube.com/embed/QTt6iMNyDuk"
+                title="Egyptian Museum Intro"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+
+        <p class="subtitle">OUR HERITAGE</p>
+
+        <h2>About The Egyptian Museum</h2>
+
+        <p>
+            The Egyptian Museum in Cairo is one of
+            the most important museums in the world.
+            It houses thousands of ancient Egyptian
+            artifacts that tell the story of a great
+            civilization.
+        </p>
+
+        <p>
+            From royal treasures to everyday objects,
+            every piece carries a story from the past.
+        </p>
+
+    </section>
+
+    <!-- Artifacts -->
+    <section class="artifacts" id="artifacts">
+
+        <p class="subtitle">ANCIENT TREASURES</p>
+
+        <h2>Discover Our Artifacts</h2>
+
+        <p class="section-description">
+            Explore some of the most fascinating
+            treasures of ancient Egypt.
+        </p>
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search for an artifact..."
+        >
+
+        <div class="artifact-container">
+
+            <!-- Artifact 1 -->
+            <div class="artifact-card">
+
+                <img src="images/rosetta.jpg"
+                     alt="Rosetta Stone">
+
+                <div class="artifact-info">
+                    <h3>Rosetta Stone</h3>
+
+                    <p>
+                        The Rosetta Stone was discovered
+                        in 1799. It contains the same
+                        text in three scripts and helped
+                        scholars understand Egyptian
+                        hieroglyphs.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Artifact 2 -->
+            <div class="artifact-card">
+
+                <img src="images/tutankhamun.jpg"
+                     alt="Tutankhamun Statue">
+
+                <div class="artifact-info">
+                    <h3>Tutankhamun</h3>
+
+                    <p>
+                        Tutankhamun was a young Egyptian
+                        pharaoh whose tomb revealed
+                        extraordinary treasures and
+                        historical discoveries.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Artifact 3 -->
+            <div class="artifact-card">
+
+                <img src="images/mask.jpg"
+                     alt="Golden Mask">
+
+                <div class="artifact-info">
+                    <h3>Golden Mask</h3>
+
+                    <p>
+                        The famous golden funerary mask
+                        of Tutankhamun is one of the
+                        most iconic masterpieces of
+                        ancient Egyptian art.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Artifact 4 -->
+            <div class="artifact-card">
+
+                <img src="images/statue.jpg"
+                     alt="Ancient Egyptian Statue">
+
+                <div class="artifact-info">
+                    <h3>Ancient Statues</h3>
+
+                    <p>
+                        Ancient Egyptian statues
+                        represent kings, gods and
+                        important figures, preserving
+                        their memory through art.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Explore -->
+    <section class="explore" id="explore">
+
+        <h2>Explore Ancient Egypt</h2>
+
+        <p>
+            Every artifact is a window into
+            a fascinating world.
+        </p>
+
+        <a href="#home" class="main-btn">
+            Back To Top
+        </a>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h2>ANKHORA</h2>
+
+        <p>
+            Discover the past. Preserve the history.
+        </p>
+
+        <p>© 2026 ANKHORA. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
